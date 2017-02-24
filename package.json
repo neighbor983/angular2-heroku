@@ -5,7 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "start": "node server.js",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build --aot -dev",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
@@ -21,21 +21,28 @@
     "@angular/platform-browser": "2.2.3",
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/router": "3.2.3",
-    "@ngtools/webpack": "1.1.9",
+
     "angular-cli": "1.0.0-beta.22-1",
     "core-js": "^2.4.1",
     "css-loader": "^0.26.1",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
+    "typescript": "^2.0.10",
     "yarn": "^0.18.2",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.23",
+    "@ngtools/webpack": "1.1.5",
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
+    "webpack": "2.1.0-beta.25",
+    "loader-runner": "2.2.0",
+    "tsickle": "0.2.4",
+    "source-map-support": "0.4.10"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.2.3",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "codelyzer": "~2.0.0-beta.1",
-    "extract-text-webpack-plugin": "2.0.0-beta.5",
+
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
